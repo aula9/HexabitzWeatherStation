@@ -5,7 +5,7 @@ from machine import UART, Pin , I2C
 import time
 from ssd1306 import SSD1306_I2C
 import framebuf
-import utime
+
 uart = UART(0, baudrate= 921600, tx=Pin(0), rx=Pin(1))  # init with given baudrate
 uart.init(921600, bits=8, parity=None, stop=1)          # init with given parameters
 print('-- UART Serial Test --')
