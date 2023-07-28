@@ -24,7 +24,7 @@ print("I2C Configuration: "+str(i2c))                   # Display I2C config
 
 oled = SSD1306_I2C(WIDTH, HEIGHT, i2c)                  # Init oled display
 
-# Raspberry Pi logo as 32x32 bytearray
+
 while uart.any() > 0:
     rxData = uart.read(12)
     w =rxData.decode('utf-8')
